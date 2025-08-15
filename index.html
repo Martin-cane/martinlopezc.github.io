@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Martín López Cane</title>
+  <style>
+    /* --- RESET BÁSICO --- */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; background: #f4f4f4; color: #333; }
+
+    /* --- CABECERA --- */
+    header {
+      background: #1e88e5;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.2rem; }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    /* --- SECCIONES --- */
+    section {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      margin-top: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      color: #1e88e5;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #1e88e5;
+      padding-bottom: 0.3rem;
+    }
+
+    /* --- PROYECTOS --- */
+    .project {
+      background: #fafafa;
+      padding: 1rem;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      border-left: 4px solid #1e88e5;
+    }
+    .project h3 { margin-bottom: 0.5rem; }
+    .project p { margin-bottom: 0.3rem; }
+    .project a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #1e88e5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .project a:hover { text-decoration: underline; }
+
+    /* --- CONTACTO --- */
+    #contact a {
+      color: #1e88e5;
+      text-decoration: none;
+    }
+    #contact a:hover { text-decoration: underline; }
+
+    /* --- FOOTER --- */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #1e88e5;
+      color: white;
+      margin-top: 2rem;
+    }
+
+    /* --- RESPONSIVE --- */
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.8rem; }
+      header p { font-size: 1rem; }
+      section { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Martín López Cane</h1>
+    <p>Analista de Sistemas | Desarrollador Web</p>
+    <nav>
+      <a href="#about">Sobre mí</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>Sobre mí</h2>
+    <p>Hola, soy Martín López Cane, estudiante de Analista de Sistemas en la Escuela Da Vinci. Me apasiona el desarrollo de sistemas de gestión, las bases de datos y las aplicaciones web modernas. Me gusta trabajar en proyectos que sean útiles y con impacto real, aplicando buenas prácticas y diseño claro.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Proyectos</h2>
+
+    <div class="project">
+      <h3>Sistema de Gestión de Librería</h3>
+      <p>Aplicación de escritorio en Java para administrar libros, ventas y usuarios, con roles y permisos diferenciados.</p>
+      <p><strong>Stack:</strong> Java, MySQL, JDBC</p>
+      <a href="https://github.com/martinlopezc/libreria" target="_blank">Ver en GitHub</a>
+    </div>
+
+    <div class="project">
+      <h3>Veterinaria "Amigos son los Amigos"</h3>
+      <p>Sistema web en Laravel para gestión de clientes, mascotas y turnos, con autenticación por roles.</p>
+      <p><strong>Stack:</strong> Laravel, MySQL, Blade</p>
+      <a href="https://github.com/martinlopezc/veterinaria" target="_blank">Ver en GitHub</a>
+    </div>
+
+    <div class="project">
+      <h3>Imperio - Base de Datos</h3>
+      <p>Modelo de base de datos para un juego de estrategia, con diseño DER, consultas y reportes documentados.</p>
+      <p><strong>Stack:</strong> MySQL</p>
+      <a href="https://github.com/martinlopezc/imperio" target="_blank">Ver en GitHub</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contacto</h2>
+    <p>Email: <a href="mailto:martin.lopezc@davinci.edu.ar">martin.lopezc@davinci.edu.ar</a></p>
+    <p>GitHub: <a href="https://github.com/martinlopezc" target="_blank">github.com/martinlopezc</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/martinlopezc" target="_blank">linkedin.com/in/martinlopezc</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Martín López Cane</p>
+  </footer>
+</body>
+</html>
